@@ -1,0 +1,13 @@
+feature_selector_with_read_count:
+  min_read_count: 9
+  ratio: 0.99
+rank_converter:
+  normalizing: true
+model_params:
+  etr:
+    max_depth: 8.23509
+    max_features: 0.2
+    min_samples_leaf: 1
+    min_samples_split: 2
+    n_estimators: 182
+    n_jobs: -1
