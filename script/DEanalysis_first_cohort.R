@@ -85,7 +85,7 @@ results = as.data.frame(mutate(as.data.frame(res),
                                                        res$q.value<0.25, #FDR threshold
                                                      "DEG_down", "non-DEG"))),
                         row.names(res))
-write.csv(results, "DEanalysis_result_first.csv", row.names=F)
+#write.csv(results, "DEanalysis_result_first.csv", row.names=F)
        
 # volcano plot----------------------------------------------------------------------------
 ggplot(results, aes(log2FoldChange, -log10(q.value)))+
