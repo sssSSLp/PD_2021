@@ -1,7 +1,7 @@
 import pandas as pd
 
 ID2NAME = [
-    "count.csv",
+    "readcount_all.csv",
     "normalized_count_with_deseq2.csv",
 ]
 

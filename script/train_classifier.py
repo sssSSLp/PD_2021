@@ -201,26 +201,6 @@ def main():
         test_prediction_df.to_csv(os.path.join(args.out, 'test_prediction.csv'))
         joblib.dump(model, os.path.join(args.out, 'test_model.joblib'))
 
-        if hasattr(model, 'yahr_regressor'):
-            model = joblib.load(os.path.join(args.out, 'test_model.joblib'))
-
-            y_pred = model.yahr_regressor.predict(x_read_count=test_dataset['read_count'],
-                                                  x_gene_expression=test_dataset['gene_expression'],
-                                                  x_info=test_dataset['info'])
-            print(model.feature_importances.nlargest(20, 'feature_importance'))
-            model.feature_importances.to_csv(os.path.join(args.out, 'test_feature_importances.csv'))
-            y_gt = test_dataset['yahr']
-            y_pred_values = y_pred.values
-            y_gt_values = y_gt.loc[y_pred.index].values
-            evaluation = evaluate_regressor(y_gt_values[:, 0], y_pred_values[:, 0])
-            print("test evaluation")
-            pprint.pprint(evaluation, indent=2)
-
-            test_prediction_df = pd.DataFrame({'y_pred': y_pred_values[:, 0],
-                                               'y_gt': y_gt_values[:, 0]},
-                                              index=y_gt.index)
-            test_prediction_df.to_csv(os.path.join(args.out, 'test_yahr_regressor_prediction.csv'))
-
     with open(os.path.join(args.out, 'result.out'), 'w') as f:
         pprint.pprint(result, f)
 
