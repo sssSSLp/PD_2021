@@ -14,7 +14,7 @@ class SklearnLikePipeline(object):
         pass
 
     def _setup_model(self, x, y, model_class, model_params):
-        print("model_class", model_class, model_params)
+        #print("model_class", model_class, model_params)
         self.model = model_class(**model_params)
         self.y_columns = y.columns
         x_values = x.values
