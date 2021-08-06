@@ -31,7 +31,7 @@ All R codes in this repository cover the preprocessing, normalization, analysis,
 
 ## Data
 The csv files in this repository contain the original data used in the TITLE OF ARTICLE (URL). The description of each file is as follows:
-- *`file name`: description*
+- *`File name`: Description*
 - `background_all.csv`: Characteristics of all participants.
 - `background_first.csv`: Characteristics of participants in the first cohort.
 - `background_second.csv`: Characteristics of participants in the second cohort.
