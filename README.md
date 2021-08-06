@@ -37,8 +37,8 @@ The csv files in this repository contain the original data used in the TITLE OF 
 - `background_second.csv`: Characteristics of participants in the second cohort.
 - `normalized_count_with_deseq2.csv`: Normalized read-count of all participants.
 - `readcount_all.csv`: Original read-count data of all participants.
-- `readcount_first.csv`: Original read-count data of the participants in first cohort.
-- `readcount_secon.csv`: Original read-count data of the participants in second cohort.
+- `readcount_first.csv`: Original read-count data of participants in the first cohort.
+- `readcount_secon.csv`: Original read-count data of participants in the second cohort.
 
 
 ## License
