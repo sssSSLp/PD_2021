@@ -42,4 +42,4 @@ The csv files in this repository contain the original data used in the TITLE OF 
 
 
 ## License
-BSD 3-Clause License (see `LICENSE` file)
+In preparation. Be sure to contact the owner before considering use.
