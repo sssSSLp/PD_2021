@@ -20,7 +20,7 @@ Thre result to evaluate the trained model is here:
 
 
 ## R codes
-All R codes in this repository cover the preprocessing, normalization, analysis, and plotting of differential expression analysis in TITLE OF ARTICLE (URL). These R codes are dependent on the following packages:
+All R codes in this repository cover the preprocessing, normalization, analysis, and plotting of differential expression analysis in the article titled "Non-invasive diagnostic tool for Parkinson’s disease by sebum RNA profile with machine learning (https://www.nature.com/articles/s41598-021-98423-9)". These R codes are dependent on the following packages:
 - DESeq2
 - reshape2
 - dplyr
@@ -30,7 +30,7 @@ All R codes in this repository cover the preprocessing, normalization, analysis,
 
 
 ## Data
-The csv files in this repository contain the original data used in the TITLE OF ARTICLE (URL). The description of each file is as follows:
+The csv files in this repository contain the original data used in the article titled "Non-invasive diagnostic tool for Parkinson’s disease by sebum RNA profile with machine learning (https://www.nature.com/articles/s41598-021-98423-9)". The description of each file is as follows:
 - *`File name`: Description*
 - `background_all.csv`: Characteristics of all participants.
 - `background_first.csv`: Characteristics of participants in the first cohort.
